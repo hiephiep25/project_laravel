@@ -19,11 +19,10 @@ Cách cài đặt code:
 - clone src code về máy
 - khởi động xampp, start apache và mysql
 - mở src code
-- chạy lệnh: 
-composer install
-npm install 
-cp .env.example .env (sau đó cấu hình lại file .env)
-php artisan key:generate
-- chạy lệnh php artisan migrate để tạo DB
-- chạy lệnh php artisan db:seed để thêm dữ liệu vào DB
+- composer install
+- npm install 
+- cp .env.example .env (sau đó cấu hình lại file .env)
+- php artisan key:generate
+- php artisan migrate để tạo DB
+- php artisan db:seed để thêm dữ liệu vào DB
 - php artisan serve để khởi động project trên trình duyệt
