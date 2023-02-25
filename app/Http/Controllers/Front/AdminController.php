@@ -50,7 +50,7 @@ class AdminController extends Controller
     }
     public function images(){
         $products = Product::all();
-        $images = ProductImage::all();
+        $images = ProductImage::paginate(5);
         return view('dashboard.admin-productImages',compact('products','images'));
     }
     public function order(){
@@ -151,4 +151,54 @@ class AdminController extends Controller
     }
 
     //Images
+    public function insert_images(){
+        $data= request()->validate([
+            'product_name'=>'required',
+            'product_image' => 'required|image',
+        ]);
+        $imagePath = request('product_image')->store('uploads','public');
+        $images = new ProductImage();
+        $images->product_id = $data['product_name'];
+        $images->path = $imagePath;
+        $images->save();
+
+        return redirect('/admin/images')->with('success','Data insert successful');
+    }
+    public function edit_images($id){
+        $products = Product::all();
+        $images = ProductImage::all();
+        $images_edit = ProductImage::find($id);
+        return view('dashboard.edit-images')->with(compact('images_edit','products','images'));
+    }
+    public function update_images($id){
+        $data= request()->validate([
+            'product_name'=>'required'
+        ]);
+        $images = ProductImage::find($id);
+        $images_edit = request('product_image');
+        if($images){
+            $destinationPath = 'storage/'.$images->path;
+            if(file_exists($destinationPath)){
+                unlink($destinationPath);
+            }
+        $imagePath= request('product_image')->store('uploads','public');
+        $images->product_id = $data['product_name'];
+        $images->path = $imagePath;
+    } 
+    else{
+        $images->product_name = $data['product_name'];
+    }
+        $images->save();
+
+        return redirect('/admin/images')->with('success','Data update successful');
+    }
+    public function delete_images($id){
+        $images= ProductImage::find($id);
+        $destinationPath = 'storage/'.$images->path;
+        if(file_exists($destinationPath)){
+            unlink($destinationPath);
+        }
+        $images->delete();
+        return redirect('/admin/images')->with('success','Data delete successful');
+    }
 }

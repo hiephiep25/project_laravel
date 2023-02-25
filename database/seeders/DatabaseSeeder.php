@@ -278,47 +278,47 @@ class DatabaseSeeder extends Seeder
         DB::table('product_images')->insert([
             [
                 'product_id' => 1,
-                'path' => 'product-1.jpg',
+                'path' => 'uploads/products/product-1.jpg',
             ],
             [
                 'product_id' => 1,
-                'path' => 'product-1-1.jpg',
+                'path' => 'uploads/products/product-1-1.jpg',
             ],
             [
                 'product_id' => 1,
-                'path' => 'product-1-2.jpg',
+                'path' => 'uploads/products/product-1-2.jpg',
             ],
             [
                 'product_id' => 2,
-                'path' => 'product-2.jpg',
+                'path' => 'uploads/products/product-2.jpg',
             ],
             [
                 'product_id' => 3,
-                'path' => 'product-3.jpg',
+                'path' => 'uploads/products/product-3.jpg',
             ],
             [
                 'product_id' => 4,
-                'path' => 'product-4.jpg',
+                'path' => 'uploads/products/product-4.jpg',
             ],
             [
                 'product_id' => 5,
-                'path' => 'product-5.jpg',
+                'path' => 'uploads/products/product-5.jpg',
             ],
             [
                 'product_id' => 6,
-                'path' => 'product-6.jpg',
+                'path' => 'uploads/products/product-6.jpg',
             ],
             [
                 'product_id' => 7,
-                'path' => 'product-7.jpg',
+                'path' => 'uploads/products/product-7.jpg',
             ],
             [
                 'product_id' => 8,
-                'path' => 'product-8.jpg',
+                'path' => 'uploads/products/product-8.jpg',
             ],
             [
                 'product_id' => 9,
-                'path' => 'product-9.jpg',
+                'path' => 'uploads/products/product-9.jpg',
             ],
         ]);
 

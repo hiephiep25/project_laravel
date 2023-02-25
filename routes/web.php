@@ -83,4 +83,7 @@ Route::prefix('admin')->group(function(){
     Route::get('/delete-product/{id}', [Front\AdminController::class, 'delete_product']);
 
     Route::post('/images', [Front\AdminController::class, 'insert_images']);
+    Route::get('/edit-images/{id}', [Front\AdminController::class, 'edit_images']);
+    Route::post('/update-images/{id}', [Front\AdminController::class, 'update_images']);
+    Route::get('/delete-images/{id}', [Front\AdminController::class, 'delete_images']);
 });
