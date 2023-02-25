@@ -25,6 +25,7 @@
             <p><a href="./admin/user">User's account</a></p>
             <p><a href="./admin/category">Category</a></p>
             <p><a href="./admin/product">Product</a></p>
+            <p><a href="./admin/images">Product's Images</a></p>
             <p><a href="./admin/order">Order</a></p>
         </div>
     </div>

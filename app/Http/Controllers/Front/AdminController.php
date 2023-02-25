@@ -48,10 +48,16 @@ class AdminController extends Controller
         $products = Product::paginate(5);
         return view('dashboard.admin-product',compact('categories','products'));
     }
+    public function images(){
+        $products = Product::all();
+        $images = ProductImage::all();
+        return view('dashboard.admin-productImages',compact('products','images'));
+    }
     public function order(){
         $orders = Order::all();
         return view('dashboard.admin-order', compact('orders'));
     }
+
 
     //Category
     public function insert_category(){
@@ -144,4 +150,5 @@ class AdminController extends Controller
         return redirect('/admin/product')->with('success','Data delete successful');
     }
 
+    //Images
 }

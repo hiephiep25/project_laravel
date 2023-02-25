@@ -69,6 +69,7 @@ Route::prefix('admin')->group(function(){
     Route::get('/user',[Front\AdminController::class, 'user']);
     Route::get('/category',[Front\AdminController::class, 'category']);
     Route::get('/product',[Front\AdminController::class, 'product']);
+    Route::get('/images',[Front\AdminController::class, 'images']);
     Route::get('/order',[Front\AdminController::class, 'order']);
     
     Route::post('/category', [Front\AdminController::class, 'insert_category']);
@@ -81,4 +82,5 @@ Route::prefix('admin')->group(function(){
     Route::post('/update-product/{id}', [Front\AdminController::class, 'update_product']);
     Route::get('/delete-product/{id}', [Front\AdminController::class, 'delete_product']);
 
+    Route::post('/images', [Front\AdminController::class, 'insert_images']);
 });
