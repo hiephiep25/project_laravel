@@ -1,17 +1,19 @@
 Web bán hàng laravel
 
-Công nghệ sử dụng: Laravel, thư viện bumbummen99/shoppingcart
+Công nghệ sử dụng: Laravel, thư viện bumbummen99/shoppingcart, template front-end codelearn
 
-Mô tả đề tài: Xây dựng website bán hàng với các chức năng của khách hàng và quản lí
+Mô tả đề tài: Xây dựng website bán hàng với các chức năng của user và admin
+Công việc hoàn thành:
+- thiết kế database, xây dựng web theo mô hình MVC
+- hiển thị trang web dưới dạng dữ liệu động
+- xây dựng chức năng cho user: đăng nhập, đăng kí, bình luận sản phẩm, đặt hàng, thao tác với giỏ hàng, tìm kiếm sản phẩm, bộ lọc sản phẩm, phân trang
+- xây dựng chức năng cho admin: đăng nhập, xem tài khoản user, quản lí danh mục sản phẩm, quản lí sản phẩm, xem thông tin đơn hàng
 
-- Khách hàng: Xem sản phẩm, tìm kiếm sản phẩm, đặt hàng, đăng nhập, đăng kí, đăng xuất, cập nhật giỏ hàng
-- Quản lí: thao tác với danh mục sản phẩm và sản phẩm (xem, thêm, sửa, xóa), xem đơn hàng, xem tài khoản khách hàng
 
 Version: 
 - Xampp: 3.3.0
 - Composer: 2.5.1
 - Laravel: 9.48.0
-- visual studio code
 
 Cách cài đặt code:
 - clone src code về máy
