@@ -3,6 +3,8 @@ Web bán hàng laravel
 Công nghệ sử dụng: Laravel, thư viện bumbummen99/shoppingcart, template front-end codelearn
 
 Mô tả đề tài: Xây dựng website bán hàng với các chức năng của user và admin
+
+
 Công việc hoàn thành:
 - thiết kế database, xây dựng web theo mô hình MVC
 - hiển thị trang web dưới dạng dữ liệu động
