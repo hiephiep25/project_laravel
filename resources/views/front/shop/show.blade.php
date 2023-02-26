@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="product-pic-zoom">
-                            <img class="product-big-img" src="front/img/products/{{$product->productImages[0]->path}}" alt="">
+                            <img class="product-big-img" src="storage/{{$product->productImages[0]->path}}" alt="">
                             <div class="zoom-icon">
                                 <i class="fa fa-search-plus"></i>
                             </div>
@@ -34,8 +34,8 @@
                         <div class="product-thumbs">
                             <div class="product-thumbs-track ps-slider owl-carousel">
                                 @foreach($product->productImages as $productImage)
-                                <div class="pt active" data-imgbigurl="front/img/products/{{$productImage->path}}">
-                                    <img src="front/img/products/{{$productImage->path}}" alt="">
+                                <div class="pt active" data-imgbigurl="stograge/{{$productImage->path}}">
+                                    <img src="storage/{{$productImage->path}}" alt="">
                                 </div>
                                 @endforeach
                             </div>
@@ -113,7 +113,7 @@
                         <ul class="nav" role="tablist">
                             <li><a class="active" href="#tab-1" data-toggle="tab" role="tab">Description</a></li>
                             <li><a href="#tab-2" data-toggle="tab" role="tab">Specifications</a></li>
-                            <li><a href="#tab-3" data-toggle="tab" role="tab">Customer Reviews (02)</a></li>
+                            <li><a href="#tab-3" data-toggle="tab" role="tab">Customer Reviews </a></li>
                         </ul>
                     </div>
                     <div class="tab-item-content">
