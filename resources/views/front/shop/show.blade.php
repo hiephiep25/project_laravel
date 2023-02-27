@@ -87,9 +87,9 @@
                             </div>
                             <div class="quantity">
                                 <div class="quantity">
-                                    <div class="pro-qty">
+                                    {{-- <div class="pro-qty">
                                         <input type="text" value="1">
-                                    </div>
+                                    </div> --}}
                                     <a href="./cart/add/{{$product->id}}" class="primary-btn pd-cart">Add to cart</a>
                                 </div>
                             </div>

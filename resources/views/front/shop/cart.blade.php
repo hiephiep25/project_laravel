@@ -36,7 +36,7 @@
                         <tbody>
                             @foreach($carts as $cart)
                             <tr>
-                                <td class="cart-pic first-row"><img style="height:150px" src="front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
+                                <td class="cart-pic first-row"><img style="height:150px" src="storage/{{$cart->options->images[0]->path}}" alt=""></td>
                                 <td class="cart-title first-row">
                                     <h5>{{$cart->name}}</h5>
                                 </td>

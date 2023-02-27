@@ -105,7 +105,7 @@
                                             <tbody>
                                                 @foreach(Cart::content() as $cart)
                                                 <tr>
-                                                    <td class="si-pic"><img style="height:50px" src="front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
+                                                    <td class="si-pic"><img style="height:50px" src="storage/{{$cart->options->images[0]->path}}" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$ {{number_format($cart->price, 2)}} x {{$cart->qty}}</p>
